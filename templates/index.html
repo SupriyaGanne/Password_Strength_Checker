@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Password Strength Checker</h1>
+    <form method="POST" action="/main/">
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <input type="submit" value="Check Strength">
+    </form>
+</body>
+</html>
